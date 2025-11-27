@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+pymupdf
+pillow
+python-dotenv
+paddlepaddle
+paddleocr
+google-generativeai
+pytesseract
