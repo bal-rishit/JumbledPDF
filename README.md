@@ -3,7 +3,7 @@
 I built a system that automatically reorders jumbled PDF documents using an OCR-based page number detection and LLM-based ordering for pages without page numbers. Since the documents were scanned, 
 traditional text extraction did not work, so, the PDF pages were converted into PNG images using pymupdf after which Tesseract OCR was used to detect page numbers but from header/footer regions only. The pages that 
 were not numbered were assumed to be initial pages of the document and those pages were then again scanned by OCR (this time whole pages were scanned) to extract text and provide it to LLM to analyse and reorder.
-Gemini 2.5 Flash was used to infer their logical reading order based on text. This approach was chosen to make performance fast by OCR-processing only small cropped regions and reduce noice.
+Gemini 2.5 Flash was used to infer their logical reading order based on text. This approach was chosen to make performance fast by OCR-processing only small cropped regions and reduce noise.
 
 2. Assumptions, limitations, and trade-offs
 
